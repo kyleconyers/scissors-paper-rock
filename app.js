@@ -1,25 +1,20 @@
-
 // document.getElementById("demo").onclick = function() {myFunction()};
-let userChoice = []
-let computerChoice = []
-
-let userScore = []
-let computerScore = []
-
-
-function userRock() {
-    userChoice = "rock"
-    console.log(userChoice)
-    // document.getElementById("rock").innerHTML = "clicked";
-    playRound()
+function userInput(x) {
+    let userChoice = x
+    console.log(userChoice) 
+    getComputerChoice() 
 };
 
 function getComputerChoice(){
-    
-}
-function playRound(){
-    
-    console.log("playing")
+    let computerChoice = Math.floor(Math.random() * 3)
+    console.log(computerChoice)
 }
 
-console.log(userChoice);
+function playRound(){
+    console.log("playing")
+    console.log(userInput())
+    console.log(getComputerChoice())
+}
+
+//console.log(userChoice);
+
