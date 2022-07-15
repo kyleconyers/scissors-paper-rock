@@ -1,14 +1,25 @@
 
 // document.getElementById("demo").onclick = function() {myFunction()};
+let userChoice = []
+let computerChoice = []
 
-function myFunction() {
-  document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
-}
+let userScore = []
+let computerScore = []
+
 
 function userRock() {
-    document.getElementById("rock").innerHTML = "clicked";
+    userChoice = "rock"
+    console.log(userChoice)
+    // document.getElementById("rock").innerHTML = "clicked";
+    playRound()
+};
+
+function getComputerChoice(){
+    
+}
+function playRound(){
+    
+    console.log("playing")
 }
 
-
-
-console.log("working");
+console.log(userChoice);
